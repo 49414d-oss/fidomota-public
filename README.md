@@ -43,7 +43,7 @@ This repository does not claim production readiness.
 
 ## Transparency
 
-We distinguish:
+The FidoMota MOTION GATE Project distinguishes between:
 
 - Implemented functionality
 - Test-verified behavior
