@@ -67,9 +67,18 @@ is granted merely by publishing the material.
 
 Licensing and contribution policies are under review.
 
+## Publication Status — 2026-10-31
+
+I maintain this repository as FidoMota's public documentation and
+verification workspace. As of 2026-10-31, it is publicly accessible
+on GitHub.
+
+I keep the core engineering implementation in a separate private
+repository.
+
 ## Publication Clarification — 2026-10-21
 
-- Status: Human Owner approved documentation correction.
+- Status: I approved this documentation correction.
 - Reason: Clarify verification limits, reported test provenance and operational authority before public release.
 - Scope: Documentation only; historical measurements and operational behavior are unchanged.
-- Publication status: This approval does not authorize public visibility.
+- Publication status: The October 21 documentation approval did not itself authorize public visibility. The repository is publicly accessible as of October 31, as noted above.
