@@ -58,7 +58,7 @@ The warnings are not failures. They remain open for the semantic review: an unus
 
 ## 5. The First Attempt Stopped Safely
 
-The first authorized attempt stopped during dependency preparation, before the compiler started. The archive tool rejected a combination of two extraction options. The run recorded the error and stopped. Nothing outside its own working directory changed.
+The first authorized attempt stopped during dependency preparation, before the compiler started. The archive tool rejected a combination of two extraction options. The run recorded the error and stopped before compilation. This report does not establish that every file outside the run directory remained unchanged.
 
 The correction removed that single option. The change then went through review again, the dependency preparation was tested offline against the real 30 crates, and a new single attempt received separate approval. The second attempt passed.
 
@@ -81,10 +81,11 @@ The pass decision came from the raw run records, judged against eight written ac
 - No pinned binary has been built yet.
 - Nothing was deployed, and the operational pipeline is unchanged.
 - The full Mission-001 end-to-end path, from a new observation to independent verification, has not yet passed.
+- Later Build-and-Pin runner implementation reviews are separate from this compilation check and do not change its recorded result.
 
 ## 8. Next Steps
 
-1. Build the verifier and the two proof builders once, in the same isolated environment, and keep them as fixed artifacts identified by SHA-256.
+1. Build the verifier, full-proof builder, and guest-input encoder once, in the same isolated environment, and keep them as fixed artifacts identified by SHA-256.
 2. Change the proof export path so that it executes those fixed artifacts instead of compiling on demand.
 3. Run the isolated regression tests.
 4. Deploy the reviewed changes together.
