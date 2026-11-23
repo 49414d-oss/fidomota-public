@@ -1,0 +1,13 @@
+{
+  "schema": "FIDOMOTA-SEPOLIA-REFERENCE-V1",
+  "purpose": "comparison point only: a historical FidoMota FAST root anchor on Sepolia (pre-M1, 2026-10-13). Not part of M1.",
+  "chain_id": 11155111,
+  "contract": "0x1aa4484a17b3d5925da8cff2cf5235e719bf920b",
+  "tx_hash": "0xd2511a65c80abad0963908294cad3bed0f0ad35b3c1b58bd5775af45f8b3e7f7",
+  "root": "0xf454bcdde4311f600b7a108c8131427cfcdf715ea863f7828a7d2e7af0faf290",
+  "provenance": {
+    "record": "batches_row.json of the sealed 2026-10-21 E2E evidence archive",
+    "sha256": "7c38cab3158864baa7edd397a402462d7f30b189ef495e8c8d9e86f2d9dce081",
+    "archive_manifest": "SHA256SUMS (24 entries, verified)"
+  }
+}

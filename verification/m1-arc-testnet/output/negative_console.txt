@@ -1,0 +1,40 @@
+negative controls against https://rpc.testnet.arc.io (data fetched once, 17 rpc calls)
+  baseline: 127/127 assertions pass
+  [DETECTED] chain_id+1: 1 failing assertion(s) e.g. ['chain.id']
+  [DETECTED] contract.runtime_sha256 flipped: 1 failing assertion(s) e.g. ['contract.runtime_code.sha256']
+  [DETECTED] contract.address flipped: 7 failing assertion(s) e.g. ['contract.create_address(deployer,nonce)', 'tx.anchor1.event.receipt_log=Anchored(root,meta,who,ts=block.timestamp)']
+  [DETECTED] deploy.block_hash flipped: 3 failing assertion(s) e.g. ['tx.deploy.receipt.block_hash', 'tx.deploy.tx.block_hash']
+  [DETECTED] deploy.input last byte flipped: 1 failing assertion(s) e.g. ['tx.deploy.input.bytes_identical']
+  [DETECTED] deploy.nonce+1: 1 failing assertion(s) e.g. ['tx.deploy.nonce']
+  [DETECTED] anchor1.block_hash flipped: 5 failing assertion(s) e.g. ['tx.anchor1.receipt.block_hash', 'tx.anchor1.tx.block_hash']
+  [DETECTED] anchor1.input last byte flipped: 1 failing assertion(s) e.g. ['tx.anchor1.input.bytes_identical']
+  [DETECTED] anchor1.nonce+1: 1 failing assertion(s) e.g. ['tx.anchor1.nonce']
+  [DETECTED] anchor1.root flipped: 4 failing assertion(s) e.g. ['tx.anchor1.anchor.root=keccak256(preimage)', 'tx.anchor1.anchor.input=selector||root||meta']
+  [DETECTED] anchor1.meta flipped: 4 failing assertion(s) e.g. ['tx.anchor1.anchor.meta_ascii', 'tx.anchor1.anchor.input=selector||root||meta']
+  [DETECTED] anchor1.who flipped: 2 failing assertion(s) e.g. ['tx.anchor1.event.receipt_log=Anchored(root,meta,who,ts=block.timestamp)', 'tx.anchor1.event.eth_getLogs_readback']
+  [DETECTED] anchor1.preimage changed: 1 failing assertion(s) e.g. ['tx.anchor1.anchor.root=keccak256(preimage)']
+  [DETECTED] anchor2.block_hash flipped: 5 failing assertion(s) e.g. ['tx.anchor2.receipt.block_hash', 'tx.anchor2.tx.block_hash']
+  [DETECTED] anchor2.input last byte flipped: 1 failing assertion(s) e.g. ['tx.anchor2.input.bytes_identical']
+  [DETECTED] anchor2.nonce+1: 1 failing assertion(s) e.g. ['tx.anchor2.nonce']
+  [DETECTED] anchor2.root flipped: 4 failing assertion(s) e.g. ['tx.anchor2.anchor.root=keccak256(preimage)', 'tx.anchor2.anchor.input=selector||root||meta']
+  [DETECTED] anchor2.meta flipped: 4 failing assertion(s) e.g. ['tx.anchor2.anchor.meta_ascii', 'tx.anchor2.anchor.input=selector||root||meta']
+  [DETECTED] anchor2.who flipped: 2 failing assertion(s) e.g. ['tx.anchor2.event.receipt_log=Anchored(root,meta,who,ts=block.timestamp)', 'tx.anchor2.event.eth_getLogs_readback']
+  [DETECTED] anchor2.preimage changed: 1 failing assertion(s) e.g. ['tx.anchor2.anchor.root=keccak256(preimage)']
+  [DETECTED] anchor3.block_hash flipped: 5 failing assertion(s) e.g. ['tx.anchor3.receipt.block_hash', 'tx.anchor3.tx.block_hash']
+  [DETECTED] anchor3.input last byte flipped: 1 failing assertion(s) e.g. ['tx.anchor3.input.bytes_identical']
+  [DETECTED] anchor3.nonce+1: 1 failing assertion(s) e.g. ['tx.anchor3.nonce']
+  [DETECTED] anchor3.root flipped: 4 failing assertion(s) e.g. ['tx.anchor3.anchor.root=keccak256(preimage)', 'tx.anchor3.anchor.input=selector||root||meta']
+  [DETECTED] anchor3.meta flipped: 4 failing assertion(s) e.g. ['tx.anchor3.anchor.meta_ascii', 'tx.anchor3.anchor.input=selector||root||meta']
+  [DETECTED] anchor3.who flipped: 2 failing assertion(s) e.g. ['tx.anchor3.event.receipt_log=Anchored(root,meta,who,ts=block.timestamp)', 'tx.anchor3.event.eth_getLogs_readback']
+  [DETECTED] anchor3.preimage changed: 1 failing assertion(s) e.g. ['tx.anchor3.anchor.root=keccak256(preimage)']
+  [DETECTED] anchor1<->anchor2 anchor contents swapped: 6 failing assertion(s) e.g. ['tx.anchor1.anchor.input=selector||root||meta', 'tx.anchor1.event.receipt_log=Anchored(root,meta,who,ts=block.timestamp)']
+  [DETECTED] deploy: null tx+receipt, block omits tx -> FAIL
+  [DETECTED] deploy: null receipt, block lists tx -> UNAVAILABLE (not PASS)
+  [DETECTED] anchor1: null tx+receipt, block omits tx -> FAIL
+  [DETECTED] anchor1: null receipt, block lists tx -> UNAVAILABLE (not PASS)
+  [DETECTED] anchor2: null tx+receipt, block omits tx -> FAIL
+  [DETECTED] anchor2: null receipt, block lists tx -> UNAVAILABLE (not PASS)
+  [DETECTED] anchor3: null tx+receipt, block omits tx -> FAIL
+  [DETECTED] anchor3: null receipt, block lists tx -> UNAVAILABLE (not PASS)
+RESULT: 36/36 controls detected
+rc=0

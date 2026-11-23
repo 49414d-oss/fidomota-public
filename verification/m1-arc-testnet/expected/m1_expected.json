@@ -1,0 +1,221 @@
+{
+  "schema": "FIDOMOTA-M1-PUBLIC-EXPECTED-V1",
+  "scope": "Circle Arc Grant M1 on Arc Testnet: 1 contract deployment + 3 SYNTHETIC anchors. Synthetic inputs, not device observations; not Mission-001 E2E; not Dual Finality.",
+  "run_id": "M1-ARC-20261119T103000Z",
+  "network": {
+    "name": "Arc Testnet",
+    "chain_id": 5042002,
+    "chain_id_hex": "0x4cef52"
+  },
+  "contract": {
+    "name": "MotionGateAnchorV0",
+    "address": "0x19fcc7ee063349051441ca89dc9dc894ffa457d2",
+    "deployer": "0xc627615380dbfb7e145046156457739a4d6142b8",
+    "deployer_nonce": 0,
+    "runtime_code_sha256": "298af41a62f9a192a64c4b159b27b4d9e590cdba3d9eae1350696d3dcb5f1363",
+    "runtime_code_bytes": 377,
+    "init_code_sha256": "7d6453d0a4fe0bc9cbebd0d3100599468ef706fe99dc5a9c4bc1ed19bee1d07a",
+    "init_code_bytes": 405,
+    "anchor_function": "anchor(bytes32,bytes32)",
+    "anchor_selector": "0xa21f3c6a",
+    "event_signature": "Anchored(bytes32,bytes32,address,uint256)",
+    "event_layout": "topics=[sig, root, meta, who]; data=uint256 ts (block.timestamp)",
+    "storage": "none: anchor() only emits Anchored; the anchor record is the event log"
+  },
+  "transactions": [
+    {
+      "tx_id": "deploy",
+      "tx_hash": "0xa9b68fdd1461b495efb6badfb757211869e82209754993e35fbf256a0c9d02c7",
+      "chain_id": 5042002,
+      "type": 2,
+      "nonce": 0,
+      "from": "0xc627615380dbfb7e145046156457739a4d6142b8",
+      "to": null,
+      "value_wei": "0",
+      "gas_limit": 200000,
+      "max_fee_per_gas_wei": "41000000000",
+      "max_priority_fee_per_gas_wei": "1000000000",
+      "input_hex": "0x6080604052348015600e575f5ffd5b506101798061001c5f395ff3fe608060405234801561000f575f5ffd5b5060043610610029575f3560e01c8063a21f3c6a1461002d575b5f5ffd5b610047600480360381019061004291906100d4565b610049565b005b3373ffffffffffffffffffffffffffffffffffffffff1681837fef9ad88ed81d42bc0ea6682949bb2f6da6a414e7221999a4c5bcbd5b2110815142604051610091919061012a565b60405180910390a45050565b5f5ffd5b5f819050919050565b6100b3816100a1565b81146100bd575f5ffd5b50565b5f813590506100ce816100aa565b92915050565b5f5f604083850312156100ea576100e961009d565b5b5f6100f7858286016100c0565b9250506020610108858286016100c0565b9150509250929050565b5f819050919050565b61012481610112565b82525050565b5f60208201905061013d5f83018461011b565b9291505056fea26469706673582212208f1b02e00ec31afa297d1ae1f3ed558d8f8dfb41a885571b623460ec27e7a97a64736f6c63430008210033",
+      "input_sha256": "7d6453d0a4fe0bc9cbebd0d3100599468ef706fe99dc5a9c4bc1ed19bee1d07a",
+      "receipt": {
+        "status": "0x1",
+        "block_number": 73005199,
+        "block_hash": "0x41e02c1329681bbc1b5edd7e82e2f5222c72c87bbf7eebd808e45802b2572cbc",
+        "contract_address": "0x19fcc7ee063349051441ca89dc9dc894ffa457d2",
+        "log_count": 0
+      }
+    },
+    {
+      "tx_id": "anchor1",
+      "tx_hash": "0x4a50e85bbb93d6aae4e714bec1889783bdd3372541cebb33d9a42bb9d4e37122",
+      "chain_id": 5042002,
+      "type": 2,
+      "nonce": 1,
+      "from": "0xc627615380dbfb7e145046156457739a4d6142b8",
+      "to": "0x19fcc7ee063349051441ca89dc9dc894ffa457d2",
+      "value_wei": "0",
+      "gas_limit": 50000,
+      "max_fee_per_gas_wei": "41000000000",
+      "max_priority_fee_per_gas_wei": "1000000000",
+      "input_hex": "0xa21f3c6a8f6ae6a81a75993fe7d96f709286b3ac9464c817efdca618820a4288f1295d5a4d472d4d312d53594e5448455449432d56310000000000000000000000000000",
+      "input_sha256": "33e8a0b9760274e48ef2f387737982ef96e9e74369307510053830b1b8456fdb",
+      "receipt": {
+        "status": "0x1",
+        "block_number": 73005604,
+        "block_hash": "0x84ae65ef85afeb35277360ed66a2937450b292ece086f7220ab9d0b00f5a7729",
+        "contract_address": null,
+        "log_count": 1
+      },
+      "anchor": {
+        "index": 1,
+        "preimage_utf8": "MG-M1-SYNTHETIC-V1|run=M1-ARC-20261119T103000Z|anchor=1",
+        "root": "0x8f6ae6a81a75993fe7d96f709286b3ac9464c817efdca618820a4288f1295d5a",
+        "root_derivation": "keccak256(utf8(preimage_utf8))",
+        "meta": "0x4d472d4d312d53594e5448455449432d56310000000000000000000000000000",
+        "meta_ascii": "MG-M1-SYNTHETIC-V1",
+        "who": "0xc627615380dbfb7e145046156457739a4d6142b8"
+      }
+    },
+    {
+      "tx_id": "anchor2",
+      "tx_hash": "0x9e11e64f6b23cf78077452910d171bec241a921690415a0071911ef39722d7c1",
+      "chain_id": 5042002,
+      "type": 2,
+      "nonce": 2,
+      "from": "0xc627615380dbfb7e145046156457739a4d6142b8",
+      "to": "0x19fcc7ee063349051441ca89dc9dc894ffa457d2",
+      "value_wei": "0",
+      "gas_limit": 50000,
+      "max_fee_per_gas_wei": "41000000000",
+      "max_priority_fee_per_gas_wei": "1000000000",
+      "input_hex": "0xa21f3c6ab91ebc8cc914c17a5ab6bee4cccfb813200ba569db189df64c37dcda7f2e9a1e4d472d4d312d53594e5448455449432d56310000000000000000000000000000",
+      "input_sha256": "7d5e0f46b2031e508e089b9866a5c55af9c752f1f5a12d0cdc82332846c06982",
+      "receipt": {
+        "status": "0x1",
+        "block_number": 73005947,
+        "block_hash": "0xc4d155d564bd111566f189d4739ea6276374449ebad007403459fc065e077090",
+        "contract_address": null,
+        "log_count": 1
+      },
+      "anchor": {
+        "index": 2,
+        "preimage_utf8": "MG-M1-SYNTHETIC-V1|run=M1-ARC-20261119T103000Z|anchor=2",
+        "root": "0xb91ebc8cc914c17a5ab6bee4cccfb813200ba569db189df64c37dcda7f2e9a1e",
+        "root_derivation": "keccak256(utf8(preimage_utf8))",
+        "meta": "0x4d472d4d312d53594e5448455449432d56310000000000000000000000000000",
+        "meta_ascii": "MG-M1-SYNTHETIC-V1",
+        "who": "0xc627615380dbfb7e145046156457739a4d6142b8"
+      }
+    },
+    {
+      "tx_id": "anchor3",
+      "tx_hash": "0x3d3a2d56857b986bc68c18008aa69ee3cd79cef08a059f4c6522e2e3cfb5a3f6",
+      "chain_id": 5042002,
+      "type": 2,
+      "nonce": 3,
+      "from": "0xc627615380dbfb7e145046156457739a4d6142b8",
+      "to": "0x19fcc7ee063349051441ca89dc9dc894ffa457d2",
+      "value_wei": "0",
+      "gas_limit": 50000,
+      "max_fee_per_gas_wei": "41000000000",
+      "max_priority_fee_per_gas_wei": "1000000000",
+      "input_hex": "0xa21f3c6ae81205670509ecc716b91b7655430011affb9348facf10c6920f4aab59c4242e4d472d4d312d53594e5448455449432d56310000000000000000000000000000",
+      "input_sha256": "a456201c23ae7bdd99498e8479595048180eddf2ef54903800e9e13a6ce1d4d2",
+      "receipt": {
+        "status": "0x1",
+        "block_number": 73006326,
+        "block_hash": "0x4293f1d715cb546a538d29bf80842ddc61d20989ba3e76fbeedd9db7e3af22a3",
+        "contract_address": null,
+        "log_count": 1
+      },
+      "anchor": {
+        "index": 3,
+        "preimage_utf8": "MG-M1-SYNTHETIC-V1|run=M1-ARC-20261119T103000Z|anchor=3",
+        "root": "0xe81205670509ecc716b91b7655430011affb9348facf10c6920f4aab59c4242e",
+        "root_derivation": "keccak256(utf8(preimage_utf8))",
+        "meta": "0x4d472d4d312d53594e5448455449432d56310000000000000000000000000000",
+        "meta_ascii": "MG-M1-SYNTHETIC-V1",
+        "who": "0xc627615380dbfb7e145046156457739a4d6142b8"
+      }
+    }
+  ],
+  "provenance": {
+    "bundle": "g3-m1-M1-ARC-20261119T103000Z",
+    "bundle_files": 82,
+    "bundle_tree_sha256": "1479d697ab73d864b8278049abd951ff3923487f9bee8571b1d88936c991cb7c",
+    "bundle_tree_sha256_method": "sha256 of `find . -type f | sort | xargs sha256sum` run in the bundle root",
+    "inputs_sha256": "e6c2cbe4c2255829a8a41bc5842d3edd372eaf36609d9958440d7e02139c39b3",
+    "approved_params_sha256": "8a40f46f46f3296e00a2af20dc20129c075eed25ca6885ea8c1f0329a7c948a2",
+    "files_read": [
+      {
+        "file": "inputs.json",
+        "sha256": "e6c2cbe4c2255829a8a41bc5842d3edd372eaf36609d9958440d7e02139c39b3"
+      },
+      {
+        "file": "tx/deploy/intent.json",
+        "sha256": "efc767bd650d5845a1d9ea9b88e722fc741ab46f71244e7839037ef96c7bf71b"
+      },
+      {
+        "file": "tx/deploy/signed.json",
+        "sha256": "e8cfd50b5c63cdb79f136709b7f11107a83fe75b687bacd3281ff58054578cbb"
+      },
+      {
+        "file": "tx/deploy/submit_result.json",
+        "sha256": "b5bd296c33892d80fa2a066c15965ed2bb30fa1330a9d471e23a1525eb54062b"
+      },
+      {
+        "file": "tx/deploy/observations/obs_0001.json",
+        "sha256": "211d83697ed7187b087fa7a44a19af73c30c962f9fc4701e6a03c8e4e4807b25"
+      },
+      {
+        "file": "tx/anchor1/intent.json",
+        "sha256": "91a2ec7772e6c73ec173ba044f174591dad5d963ecd3864bbb4d36380f7fc953"
+      },
+      {
+        "file": "tx/anchor1/signed.json",
+        "sha256": "969f1f9ecc2074bfef94c946379bc0c005ddb6cbe41e26497b2e29af6673ab23"
+      },
+      {
+        "file": "tx/anchor1/submit_result.json",
+        "sha256": "6c05d2e4050dc0ef638cbc8d1a9d82c80ae71181bf0745065e8b0a09c4727877"
+      },
+      {
+        "file": "tx/anchor1/observations/obs_0001.json",
+        "sha256": "8387b4ce693b92d43beba153f10893f39a6bca724d3f0180890f963bdd0abd26"
+      },
+      {
+        "file": "tx/anchor2/intent.json",
+        "sha256": "b2fc1462956444a6f657b576c2f7610af5d11f12358cea8f75e2b97e94e2fa29"
+      },
+      {
+        "file": "tx/anchor2/signed.json",
+        "sha256": "cdf5df44bf48b61c4adbb0f26810cbd82fae673db5799284b80c3d0ef53a5f08"
+      },
+      {
+        "file": "tx/anchor2/submit_result.json",
+        "sha256": "4dcefbb56f9a689a9077561d5bd62dda15b1c68f033ff4e60318b2f811a03452"
+      },
+      {
+        "file": "tx/anchor2/observations/obs_0001.json",
+        "sha256": "c2a2a8b28afbb48a899af5e481beda28177c66475448223a8e145dee058582cc"
+      },
+      {
+        "file": "tx/anchor3/intent.json",
+        "sha256": "b5b4f3904099620fb095b48132e1f8dba0639c9ab7201df2951eaee96383d186"
+      },
+      {
+        "file": "tx/anchor3/signed.json",
+        "sha256": "7f107d7268e6a5f4701789cfe242f51335f9049e612eda9ef3f3c876a3a80eb9"
+      },
+      {
+        "file": "tx/anchor3/submit_result.json",
+        "sha256": "328daec624d0edc174c536919e6404cba16b4fdc939839d1d2d730587bbc25f0"
+      },
+      {
+        "file": "tx/anchor3/observations/obs_0001.json",
+        "sha256": "220c5bd7bd32908dee629fe4c7135cb2052da6899256ab9856e69f3a30ae415b"
+      }
+    ],
+    "files_not_read": "verification/** (original verdicts are not an oracle)"
+  }
+}

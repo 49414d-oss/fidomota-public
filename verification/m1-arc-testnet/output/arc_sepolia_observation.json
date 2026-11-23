@@ -1,0 +1,471 @@
+{
+ "schema": "FIDOMOTA-ARC-SEPOLIA-OBSERVATION-V1",
+ "started_utc": "2026-11-23T08:09:20Z",
+ "anchored_topic0": "0xef9ad88ed81d42bc0ea6682949bb2f6da6a414e7221999a4c5bcbd5b21108151",
+ "arc": [
+  {
+   "rpc": "https://rpc.testnet.arc.io",
+   "eth_chainId": 5042002,
+   "net_version": "5042002",
+   "web3_clientVersion": "arc/v1",
+   "eth_gasPrice": 25000000000,
+   "eth_maxPriorityFeePerGas": 5000000000,
+   "block_latest": {
+    "number": 73667443,
+    "timestamp": 1795421360,
+    "hash": "0x2c5572670afe2d4d7c1a67548a32223d2dda61349528310b1a4a71789e5146ca",
+    "baseFeePerGas": 20000000000,
+    "gasLimit": 30000000
+   },
+   "block_safe": {
+    "number": 73667443,
+    "timestamp": 1795421360,
+    "hash": "0x2c5572670afe2d4d7c1a67548a32223d2dda61349528310b1a4a71789e5146ca",
+    "baseFeePerGas": 20000000000,
+    "gasLimit": 30000000
+   },
+   "block_finalized": {
+    "number": 73667443,
+    "timestamp": 1795421360,
+    "hash": "0x2c5572670afe2d4d7c1a67548a32223d2dda61349528310b1a4a71789e5146ca",
+    "baseFeePerGas": 20000000000,
+    "gasLimit": 30000000
+   },
+   "m1_contract_code": {
+    "address": "0x19fcc7ee063349051441ca89dc9dc894ffa457d2",
+    "bytes": 377,
+    "sha256": "298af41a62f9a192a64c4b159b27b4d9e590cdba3d9eae1350696d3dcb5f1363",
+    "keccak256": "0xf7e2b1b3b05d144b2225fb3c31a4503cb99e4aff9b1f7cd442b75fa356f4e486",
+    "contains_selector_a21f3c6a": true,
+    "runtime_without_cbor_metadata_sha256": "b6f9eb11c28e4861136e78a12144fb693abca52a8054678c3b3bf78e6bee9618"
+   },
+   "m1_txs": {
+    "deploy": {
+     "tx_hash": "0xa9b68fdd1461b495efb6badfb757211869e82209754993e35fbf256a0c9d02c7",
+     "tx_lookup": "ok",
+     "receipt_lookup": "ok",
+     "type": 2,
+     "from": "0xc627615380dbfb7e145046156457739a4d6142b8",
+     "to": null,
+     "nonce": 0,
+     "gas_limit": 200000,
+     "maxFeePerGas": 41000000000,
+     "maxPriorityFeePerGas": 1000000000,
+     "gasPrice": 21000000000,
+     "input_selector": "0x60806040",
+     "input_bytes": 405,
+     "status": "0x1",
+     "block_number": 73005199,
+     "gas_used": 134751,
+     "effective_gas_price": 21000000000,
+     "fee_wei": 2829771000000000,
+     "contract_address": "0x19fcc7ee063349051441ca89dc9dc894ffa457d2",
+     "logs": [],
+     "receipt_fields": [
+      "blockHash",
+      "blockNumber",
+      "contractAddress",
+      "cumulativeGasUsed",
+      "effectiveGasPrice",
+      "from",
+      "gasUsed",
+      "logs",
+      "logsBloom",
+      "status",
+      "to",
+      "transactionHash",
+      "transactionIndex",
+      "type"
+     ],
+     "block": {
+      "number": 73005199,
+      "hash": "0x41e02c1329681bbc1b5edd7e82e2f5222c72c87bbf7eebd808e45802b2572cbc",
+      "timestamp": 1795084747,
+      "baseFeePerGas": 20000000000
+     }
+    },
+    "anchor1": {
+     "tx_hash": "0x4a50e85bbb93d6aae4e714bec1889783bdd3372541cebb33d9a42bb9d4e37122",
+     "tx_lookup": "ok",
+     "receipt_lookup": "ok",
+     "type": 2,
+     "from": "0xc627615380dbfb7e145046156457739a4d6142b8",
+     "to": "0x19fcc7ee063349051441ca89dc9dc894ffa457d2",
+     "nonce": 1,
+     "gas_limit": 50000,
+     "maxFeePerGas": 41000000000,
+     "maxPriorityFeePerGas": 1000000000,
+     "gasPrice": 21000000000,
+     "input_selector": "0xa21f3c6a",
+     "input_bytes": 68,
+     "status": "0x1",
+     "block_number": 73005604,
+     "gas_used": 24795,
+     "effective_gas_price": 21000000000,
+     "fee_wei": 520695000000000,
+     "contract_address": null,
+     "logs": [
+      {
+       "address": "0x19fcc7ee063349051441ca89dc9dc894ffa457d2",
+       "topics": [
+        "0xef9ad88ed81d42bc0ea6682949bb2f6da6a414e7221999a4c5bcbd5b21108151",
+        "0x8f6ae6a81a75993fe7d96f709286b3ac9464c817efdca618820a4288f1295d5a",
+        "0x4d472d4d312d53594e5448455449432d56310000000000000000000000000000",
+        "0x000000000000000000000000c627615380dbfb7e145046156457739a4d6142b8"
+       ],
+       "data": "0x000000000000000000000000000000000000000000000000000000006afed299",
+       "logIndex": 17,
+       "has_blockTimestamp": true,
+       "removed": false
+      }
+     ],
+     "receipt_fields": [
+      "blockHash",
+      "blockNumber",
+      "contractAddress",
+      "cumulativeGasUsed",
+      "effectiveGasPrice",
+      "from",
+      "gasUsed",
+      "logs",
+      "logsBloom",
+      "status",
+      "to",
+      "transactionHash",
+      "transactionIndex",
+      "type"
+     ],
+     "block": {
+      "number": 73005604,
+      "hash": "0x84ae65ef85afeb35277360ed66a2937450b292ece086f7220ab9d0b00f5a7729",
+      "timestamp": 1795084953,
+      "baseFeePerGas": 20000000000
+     }
+    },
+    "anchor2": {
+     "tx_hash": "0x9e11e64f6b23cf78077452910d171bec241a921690415a0071911ef39722d7c1",
+     "tx_lookup": "ok",
+     "receipt_lookup": "ok",
+     "type": 2,
+     "from": "0xc627615380dbfb7e145046156457739a4d6142b8",
+     "to": "0x19fcc7ee063349051441ca89dc9dc894ffa457d2",
+     "nonce": 2,
+     "gas_limit": 50000,
+     "maxFeePerGas": 41000000000,
+     "maxPriorityFeePerGas": 1000000000,
+     "gasPrice": 21000000000,
+     "input_selector": "0xa21f3c6a",
+     "input_bytes": 68,
+     "status": "0x1",
+     "block_number": 73005947,
+     "gas_used": 24795,
+     "effective_gas_price": 21000000000,
+     "fee_wei": 520695000000000,
+     "contract_address": null,
+     "logs": [
+      {
+       "address": "0x19fcc7ee063349051441ca89dc9dc894ffa457d2",
+       "topics": [
+        "0xef9ad88ed81d42bc0ea6682949bb2f6da6a414e7221999a4c5bcbd5b21108151",
+        "0xb91ebc8cc914c17a5ab6bee4cccfb813200ba569db189df64c37dcda7f2e9a1e",
+        "0x4d472d4d312d53594e5448455449432d56310000000000000000000000000000",
+        "0x000000000000000000000000c627615380dbfb7e145046156457739a4d6142b8"
+       ],
+       "data": "0x000000000000000000000000000000000000000000000000000000006afed347",
+       "logIndex": 8,
+       "has_blockTimestamp": true,
+       "removed": false
+      }
+     ],
+     "receipt_fields": [
+      "blockHash",
+      "blockNumber",
+      "contractAddress",
+      "cumulativeGasUsed",
+      "effectiveGasPrice",
+      "from",
+      "gasUsed",
+      "logs",
+      "logsBloom",
+      "status",
+      "to",
+      "transactionHash",
+      "transactionIndex",
+      "type"
+     ],
+     "block": {
+      "number": 73005947,
+      "hash": "0xc4d155d564bd111566f189d4739ea6276374449ebad007403459fc065e077090",
+      "timestamp": 1795085127,
+      "baseFeePerGas": 20000000000
+     }
+    },
+    "anchor3": {
+     "tx_hash": "0x3d3a2d56857b986bc68c18008aa69ee3cd79cef08a059f4c6522e2e3cfb5a3f6",
+     "tx_lookup": "ok",
+     "receipt_lookup": "ok",
+     "type": 2,
+     "from": "0xc627615380dbfb7e145046156457739a4d6142b8",
+     "to": "0x19fcc7ee063349051441ca89dc9dc894ffa457d2",
+     "nonce": 3,
+     "gas_limit": 50000,
+     "maxFeePerGas": 41000000000,
+     "maxPriorityFeePerGas": 1000000000,
+     "gasPrice": 21000000000,
+     "input_selector": "0xa21f3c6a",
+     "input_bytes": 68,
+     "status": "0x1",
+     "block_number": 73006326,
+     "gas_used": 24783,
+     "effective_gas_price": 21000000000,
+     "fee_wei": 520443000000000,
+     "contract_address": null,
+     "logs": [
+      {
+       "address": "0x19fcc7ee063349051441ca89dc9dc894ffa457d2",
+       "topics": [
+        "0xef9ad88ed81d42bc0ea6682949bb2f6da6a414e7221999a4c5bcbd5b21108151",
+        "0xe81205670509ecc716b91b7655430011affb9348facf10c6920f4aab59c4242e",
+        "0x4d472d4d312d53594e5448455449432d56310000000000000000000000000000",
+        "0x000000000000000000000000c627615380dbfb7e145046156457739a4d6142b8"
+       ],
+       "data": "0x000000000000000000000000000000000000000000000000000000006afed407",
+       "logIndex": 13,
+       "has_blockTimestamp": true,
+       "removed": false
+      }
+     ],
+     "receipt_fields": [
+      "blockHash",
+      "blockNumber",
+      "contractAddress",
+      "cumulativeGasUsed",
+      "effectiveGasPrice",
+      "from",
+      "gasUsed",
+      "logs",
+      "logsBloom",
+      "status",
+      "to",
+      "transactionHash",
+      "transactionIndex",
+      "type"
+     ],
+     "block": {
+      "number": 73006326,
+      "hash": "0x4293f1d715cb546a538d29bf80842ddc61d20989ba3e76fbeedd9db7e3af22a3",
+      "timestamp": 1795085319,
+      "baseFeePerGas": 20000000000
+     }
+    }
+   },
+   "signer_balance_delta_over_m1": {
+    "block_before": 73005198,
+    "block_after": 73006326,
+    "balance_before_wei": 20000000000000000000,
+    "balance_after_wei": 19995608396000000000,
+    "delta_wei": 4391604000000000
+   },
+   "rpc_calls": 23
+  },
+  {
+   "rpc": "https://rpc.blockdaemon.testnet.arc.io",
+   "eth_chainId": 5042002,
+   "net_version": "5042002",
+   "web3_clientVersion": "reth/v2.2.0-508cbdf/x86_64-unknown-linux-gnu",
+   "eth_gasPrice": 27500000000,
+   "eth_maxPriorityFeePerGas": 7496731548,
+   "block_latest": {
+    "number": 73667454,
+    "timestamp": 1795421366,
+    "hash": "0xae1bc5747a376e9c581e19b9d64123a9fafa92553436e96dfb39a527f407d4ac",
+    "baseFeePerGas": 20000000000,
+    "gasLimit": 30000000
+   },
+   "block_safe": {
+    "number": 73667456,
+    "timestamp": 1795421367,
+    "hash": "0xe249f851e210b997f90c61dee084cee343be2b3a05cd37107f60099d9dabb5e0",
+    "baseFeePerGas": 20000000000,
+    "gasLimit": 30000000
+   },
+   "block_finalized": {
+    "number": 73667458,
+    "timestamp": 1795421368,
+    "hash": "0x0b82b7a5db85be3e0271a549d1434d3626e5e773e6775367cf05745fb8734d39",
+    "baseFeePerGas": 20000000000,
+    "gasLimit": 30000000
+   },
+   "m1_contract_code": {
+    "address": "0x19fcc7ee063349051441ca89dc9dc894ffa457d2",
+    "bytes": 377,
+    "sha256": "298af41a62f9a192a64c4b159b27b4d9e590cdba3d9eae1350696d3dcb5f1363",
+    "keccak256": "0xf7e2b1b3b05d144b2225fb3c31a4503cb99e4aff9b1f7cd442b75fa356f4e486",
+    "contains_selector_a21f3c6a": true,
+    "runtime_without_cbor_metadata_sha256": "b6f9eb11c28e4861136e78a12144fb693abca52a8054678c3b3bf78e6bee9618"
+   },
+   "m1_txs": {
+    "deploy": {
+     "tx_hash": "0xa9b68fdd1461b495efb6badfb757211869e82209754993e35fbf256a0c9d02c7",
+     "tx_lookup": "null",
+     "receipt_lookup": "null"
+    },
+    "anchor1": {
+     "tx_hash": "0x4a50e85bbb93d6aae4e714bec1889783bdd3372541cebb33d9a42bb9d4e37122",
+     "tx_lookup": "null",
+     "receipt_lookup": "null"
+    },
+    "anchor2": {
+     "tx_hash": "0x9e11e64f6b23cf78077452910d171bec241a921690415a0071911ef39722d7c1",
+     "tx_lookup": "null",
+     "receipt_lookup": "null"
+    },
+    "anchor3": {
+     "tx_hash": "0x3d3a2d56857b986bc68c18008aa69ee3cd79cef08a059f4c6522e2e3cfb5a3f6",
+     "tx_lookup": "null",
+     "receipt_lookup": "null"
+    }
+   },
+   "signer_balance_delta_over_m1": {
+    "error": "eth_getBalance: rpc error -32603 state at block #73005199 is pruned | eth_getBalance: rpc error -32603 state at block #73006327 is pruned"
+   },
+   "rpc_calls": 19
+  }
+ ],
+ "sepolia": [
+  {
+   "rpc": "https://sepolia.gateway.tenderly.co",
+   "eth_chainId": 11155111,
+   "net_version": "11155111",
+   "web3_clientVersion": "Tenderly/1.0",
+   "eth_gasPrice": 17,
+   "eth_maxPriorityFeePerGas": 2,
+   "block_latest": {
+    "number": 12194433,
+    "timestamp": 1795421376,
+    "hash": "0xb4b4b512173633e6b54508544ffe11c6a55f482ffffa230842805d2991874d5a",
+    "baseFeePerGas": 15,
+    "gasLimit": 199804689
+   },
+   "block_safe": {
+    "number": 12194431,
+    "timestamp": 1795421352,
+    "hash": "0xae56553f23676f6dc7941b1f9fd1f882a30396219c72d963ffa3cea57beda910",
+    "baseFeePerGas": 15,
+    "gasLimit": 199999809
+   },
+   "block_finalized": {
+    "number": 12194361,
+    "timestamp": 1795420500,
+    "hash": "0xa9f68443b0ed6c87909e65ae944cf7fb4093971938a7dcdfc3fabf2a618a02f9",
+    "baseFeePerGas": 16,
+    "gasLimit": 200000000
+   },
+   "reference_contract_code": {
+    "address": "0x1aa4484a17b3d5925da8cff2cf5235e719bf920b",
+    "bytes": 377,
+    "sha256": "298af41a62f9a192a64c4b159b27b4d9e590cdba3d9eae1350696d3dcb5f1363",
+    "keccak256": "0xf7e2b1b3b05d144b2225fb3c31a4503cb99e4aff9b1f7cd442b75fa356f4e486",
+    "contains_selector_a21f3c6a": true,
+    "runtime_without_cbor_metadata_sha256": "b6f9eb11c28e4861136e78a12144fb693abca52a8054678c3b3bf78e6bee9618"
+   },
+   "reference_tx": {
+    "tx_hash": "0xd2511a65c80abad0963908294cad3bed0f0ad35b3c1b58bd5775af45f8b3e7f7",
+    "tx_lookup": "ok",
+    "receipt_lookup": "ok",
+    "type": 2,
+    "from": "0xc93178e8451907378ebd1ac2bb1322009393ad86",
+    "to": "0x1aa4484a17b3d5925da8cff2cf5235e719bf920b",
+    "nonce": 16285,
+    "gas_limit": 19516,
+    "maxFeePerGas": 1100052,
+    "maxPriorityFeePerGas": 1100012,
+    "gasPrice": 1100032,
+    "input_selector": "0xa21f3c6a",
+    "input_bytes": 68,
+    "status": "0x1",
+    "block_number": 11905576,
+    "gas_used": 19352,
+    "effective_gas_price": 1100032,
+    "fee_wei": 21287819264,
+    "contract_address": null,
+    "logs": [
+     {
+      "address": "0x1aa4484a17b3d5925da8cff2cf5235e719bf920b",
+      "topics": [
+       "0xef9ad88ed81d42bc0ea6682949bb2f6da6a414e7221999a4c5bcbd5b21108151",
+       "0xf454bcdde4311f600b7a108c8131427cfcdf715ea863f7828a7d2e7af0faf290",
+       "0x0000000000000000000000000000000000000000000000000000000000000000",
+       "0x000000000000000000000000c93178e8451907378ebd1ac2bb1322009393ad86"
+      ],
+      "data": "0x000000000000000000000000000000000000000000000000000000006ace0c78",
+      "logIndex": 287,
+      "has_blockTimestamp": true,
+      "removed": false
+     }
+    ],
+    "receipt_fields": [
+     "blobGasUsed",
+     "blockHash",
+     "blockNumber",
+     "contractAddress",
+     "cumulativeGasUsed",
+     "effectiveGasPrice",
+     "from",
+     "gasUsed",
+     "logs",
+     "logsBloom",
+     "status",
+     "to",
+     "transactionHash",
+     "transactionIndex",
+     "type"
+    ],
+    "block": {
+     "number": 11905576,
+     "hash": "0x3d86d78e8c9d9e86a2e17d4f9e43286c9226b42516377253ed591c111db651ed",
+     "timestamp": 1791888504,
+     "baseFeePerGas": 20
+    }
+   },
+   "rpc_calls": 12
+  },
+  {
+   "rpc": "https://sepolia.drpc.org",
+   "eth_chainId": {
+    "error": "eth_chainId: HTTP 400"
+   },
+   "net_version": {
+    "error": "net_version: HTTP 400"
+   },
+   "web3_clientVersion": {
+    "error": "web3_clientVersion: HTTP 400"
+   },
+   "eth_gasPrice": {
+    "error": "eth_gasPrice: HTTP 400"
+   },
+   "eth_maxPriorityFeePerGas": {
+    "error": "eth_maxPriorityFeePerGas: HTTP 400"
+   },
+   "block_latest": {
+    "error": "eth_getBlockByNumber: HTTP 400"
+   },
+   "block_safe": {
+    "error": "eth_getBlockByNumber: HTTP 400"
+   },
+   "block_finalized": {
+    "error": "eth_getBlockByNumber: HTTP 400"
+   },
+   "reference_contract_code": {
+    "error": "eth_getCode: HTTP 400"
+   },
+   "reference_tx": {
+    "tx_hash": "0xd2511a65c80abad0963908294cad3bed0f0ad35b3c1b58bd5775af45f8b3e7f7",
+    "tx_lookup": "eth_getTransactionByHash: HTTP 400",
+    "receipt_lookup": "eth_getTransactionReceipt: HTTP 400"
+   },
+   "rpc_calls": 11
+  }
+ ],
+ "finished_utc": "2026-11-23T08:09:41Z"
+}

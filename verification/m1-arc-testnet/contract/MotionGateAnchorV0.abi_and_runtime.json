@@ -1,0 +1,60 @@
+{
+  "contract": "MotionGateAnchorV0",
+  "compiler": "solc 0.8.33+commit.64118f21",
+  "optimizer": false,
+  "evmVersion": "prague",
+  "abi": [
+    {
+      "type": "function",
+      "name": "anchor",
+      "inputs": [
+        {
+          "name": "root",
+          "type": "bytes32",
+          "internalType": "bytes32"
+        },
+        {
+          "name": "meta",
+          "type": "bytes32",
+          "internalType": "bytes32"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "event",
+      "name": "Anchored",
+      "inputs": [
+        {
+          "name": "root",
+          "type": "bytes32",
+          "indexed": true,
+          "internalType": "bytes32"
+        },
+        {
+          "name": "meta",
+          "type": "bytes32",
+          "indexed": true,
+          "internalType": "bytes32"
+        },
+        {
+          "name": "who",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "ts",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    }
+  ],
+  "init_code_sha256": "7d6453d0a4fe0bc9cbebd0d3100599468ef706fe99dc5a9c4bc1ed19bee1d07a",
+  "runtime_code_sha256": "298af41a62f9a192a64c4b159b27b4d9e590cdba3d9eae1350696d3dcb5f1363",
+  "runtime_code_hex": "0x608060405234801561000f575f5ffd5b5060043610610029575f3560e01c8063a21f3c6a1461002d575b5f5ffd5b610047600480360381019061004291906100d4565b610049565b005b3373ffffffffffffffffffffffffffffffffffffffff1681837fef9ad88ed81d42bc0ea6682949bb2f6da6a414e7221999a4c5bcbd5b2110815142604051610091919061012a565b60405180910390a45050565b5f5ffd5b5f819050919050565b6100b3816100a1565b81146100bd575f5ffd5b50565b5f813590506100ce816100aa565b92915050565b5f5f604083850312156100ea576100e961009d565b5b5f6100f7858286016100c0565b9250506020610108858286016100c0565b9150509250929050565b5f819050919050565b61012481610112565b82525050565b5f60208201905061013d5f83018461011b565b9291505056fea26469706673582212208f1b02e00ec31afa297d1ae1f3ed558d8f8dfb41a885571b623460ec27e7a97a64736f6c63430008210033"
+}
