@@ -1,25 +1,114 @@
 # FidoMota
 
+## MOTION GATE
+
 **Evidence & Trust Infrastructure for Physical Systems**
-
-FidoMota is developing infrastructure for turning observations
-into traceable evidence, verifiable commitments, and independently
-checkable trust results.
-
-This repository is the public-facing documentation and
-verification workspace for FidoMota.
-
-## The Core Idea
-
-Observation -> Evidence -> Proof -> Verification
 
 **Light Proof. Heavy Trust.**
 
-Observations may be complex. Proofs should be portable.
-Verification should not require trusting the evidence producer.
+MOTION GATE is an evidence and trust infrastructure project developed under the FidoMota brand.
 
-Cryptographic proofs establish only their stated predicates. They do not
-by themselves establish the accuracy or authenticity of physical inputs.
+It is designed to transform observations from physical and digital systems into traceable evidence, cryptographic proofs and independently verifiable commitments.
+
+Machines continuously produce data. Receiving data, however, is not the same as possessing verifiable evidence.
+
+MOTION GATE is designed to bridge that gap.
+
+## Philosophy
+
+**Observe. Record. Prove. Verify.**
+
+Record observations as observed.
+
+Preserve their integrity.
+
+Make cryptographic claims about the recorded evidence independently verifiable.
+
+Cryptographic evidence establishes specific properties of recorded observations. It does not establish the absolute truth of the underlying physical event.
+
+## System Architecture
+
+```text
+Source Observation
+        │
+        ▼
+Native L1 Evidence
+        │
+        ▼
+MerklePress — Sealed Batch Root
+        │
+        ├── FAST LANE
+        │     Arc — Root Anchor
+        │     Existence Finality
+        │
+        └── DEEP LANE
+              RISC Zero Full Proof
+              Ethereum Sepolia — ZK Receipt Anchor
+              Validity Finality
+        │
+        ▼
+Independent Verification
+        │
+        ▼
+Dual Finality
+        │
+        ▼
+L3 — Evidence Explorer
+```
+
+MOTION GATE is designed around two complementary verification paths.
+
+**FAST Lane — Existence**
+
+Records the batch root on Arc, establishing a blockchain commitment to the recorded evidence.
+
+**DEEP Lane — Validity**
+
+Generates a cryptographic proof using RISC Zero and records proof-associated commitments on Ethereum Sepolia.
+
+The DEEP commitment must reference the preceding FAST root anchor. Both lanes must correspond to the same batch root.
+
+Independent verification establishes whether the requirements for Dual Finality are satisfied.
+
+Proof verification takes place off-chain. The blockchain contracts record commitments rather than directly verifying the RISC Zero proof.
+
+See [Architecture](architecture/README.md) for the complete logical architecture and finality model.
+
+## Application Domains
+
+MOTION GATE is designed for machine-generated observations across domains including:
+
+- Electric vehicles and battery systems
+- Energy infrastructure
+- Industrial equipment
+- IoT and connected devices
+- Autonomous systems and machine networks
+
+These are intended application domains, not claims of existing commercial deployments.
+
+## Development Status
+
+### Mission-001 — Original Pipeline Integration
+
+November 26, 2026
+
+| Engineering checkpoint | Status |
+| --- | --- |
+| Virtual-device observation intake | Observed in the operational pipeline |
+| Native L1 evidence recording | Observed |
+| MerklePress batch construction | Observed |
+| Arc FAST anchor for the target batch | Confirmed against on-chain records in project engineering records |
+| RISC Zero cryptographic proof | Generated and locally verified in isolation |
+| Operational receipt and journal | Materialization reported in engineering execution records |
+| Ethereum Sepolia ZK receipt anchor | Pending |
+| Independent end-to-end verification | Pending |
+| Dual Finality | Not yet achieved |
+
+Mission-001 remains incomplete.
+
+The objective is to demonstrate the original end-to-end pipeline without manual proof substitution or alternative execution paths.
+
+The observed results and isolated validation results represent different evidence scopes. A complete, independently reproducible public evidence package has not yet been published.
 
 ## Explore
 
@@ -27,58 +116,20 @@ by themselves establish the accuracy or authenticity of physical inputs.
 - [Specifications](specifications/README.md)
 - [Verification](verification/README.md)
 - [Examples](examples/README.md)
-- [Engineering Dev Log](devlog/2026-10-18-native-l1.md)
+- [Engineering Dev Log](devlog/)
 
-## Development Status
+## Public Repository
 
-FidoMota is under active development.
+This repository provides public technical documentation and verification information for FidoMota and the MOTION GATE project.
 
-Maintainer-reported Native L1 component results include PASS outcomes for
-selected isolated synthetic scenarios. Supporting test records are not
-included in this repository. The original full end-to-end pipeline,
-including FAST and ZK anchoring and independent on-chain
-verification for Mission-001, has not yet passed.
+The core engineering implementation is maintained separately in a private repository.
 
-This repository does not claim production readiness.
+Public visibility does not constitute an open-source license or a claim of production readiness.
 
-## Transparency
+See [NOTICE.md](NOTICE.md) for publication information.
 
-The FidoMota MOTION GATE Project distinguishes between:
+---
 
-- Implemented functionality
-- Test-verified behavior
-- Known failures and limitations
-- Planned or incomplete integrations
+**FidoMota — MOTION GATE**
 
-Public verification artifacts will be provided only after
-their provenance, reproducibility, security, and release
-conditions have been reviewed.
-
-## Source and Licensing
-
-The original FidoMota engineering repository is private.
-
-It remains the sole authoritative implementation and operational pipeline.
-This repository publishes documentation and verification information only.
-
-The contents of this repository are not automatically
-open-source licensed. No redistribution or reuse license
-is granted merely by publishing the material.
-
-Licensing and contribution policies are under review.
-
-## Publication Status — 2026-10-31
-
-I maintain this repository as FidoMota's public documentation and
-verification workspace. As of 2026-10-31, it is publicly accessible
-on GitHub.
-
-I keep the core engineering implementation in a separate private
-repository.
-
-## Publication Clarification — 2026-10-21
-
-- Status: I approved this documentation correction.
-- Reason: Clarify verification limits, reported test provenance and operational authority before public release.
-- Scope: Documentation only; historical measurements and operational behavior are unchanged.
-- Publication status: The October 21 documentation approval did not itself authorize public visibility. The repository is publicly accessible as of October 31, as noted above.
+*Record what was observed. Make the evidence verifiable.*
