@@ -1,0 +1,203 @@
+{
+  "type": "mg.public.mission001.acceptance_evidence_extract.v1",
+  "version": 1,
+  "extraction": {
+    "method": "field-level allowlist; values copied verbatim from the source artifact, except where a field is marked derived",
+    "source_artifact": {
+      "type": "mg.zk_receipt_anchor.p73_acceptance_evidence.v1",
+      "sha256": "6755941518fb55d1fb4b523e47606fe7c3197322230d436b77c0ffbd4876159d",
+      "sha256_meaning": "SHA-256 of the preserved private source artifact",
+      "published": false,
+      "note": "Provenance reference only. The source artifact contains private host paths and is not published; this hash cannot be reproduced from this extract."
+    },
+    "acceptance_record": {
+      "published_path": "acceptance.json",
+      "sha256": "d3200866d46c7bf829a8c6b4d17363376bffd00b729bdbe5412e82967e687e60"
+    }
+  },
+  "batch": {
+    "batch_slug": "MG_BATCH_blake3_v1_20261120_1795198336847",
+    "leaf_index": 0,
+    "hash_world": "blake3_v1",
+    "record_version": 2,
+    "proof_segment_index": 0,
+    "proof_record_index": 0,
+    "batch_root": "0x4d1569b7a06031e01e72cdc902ed22d92308c998ea9eeaabaac882a95846d15f",
+    "segment_root": "0x4d1569b7a06031e01e72cdc902ed22d92308c998ea9eeaabaac882a95846d15f"
+  },
+  "fast_anchor": {
+    "network": "Arc Testnet",
+    "chain_id": "5042002",
+    "contract": "0x19fcc7ee063349051441ca89dc9dc894ffa457d2",
+    "contract_deployment_tx_hash": "0xa9b68fdd1461b495efb6badfb757211869e82209754993e35fbf256a0c9d02c7",
+    "contract_code_sha256": "298af41a62f9a192a64c4b159b27b4d9e590cdba3d9eae1350696d3dcb5f1363",
+    "contract_abi_sha256": "4c28446c359ef20ae0e06fa979b62bcf72ef2191d8860c01d8399ee697f93407",
+    "tx_hash": "0x9c8084fdb78334f0300fcd304bebb8ddafeccd756e73f5c1345f4b2370539b96",
+    "block_hash": "0x7711f8052d25e01f9e3ccbf748c3c02b01687e83dc5d541221471f3b7858c611",
+    "log_index": "10",
+    "metadata": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "value_constraint": "0",
+    "fast_evidence_sha256": "ee8c3b572c445632ff9c5732a2e242a1f2f7211f0bf2f059eac75929403aaca2"
+  },
+  "zk_receipt_anchor": {
+    "network": "Ethereum Sepolia",
+    "chain_id": "11155111",
+    "contract": "0x76f09023e0ce912ff62ad796c2838630f8975f6f",
+    "contract_deployment_tx_hash": "0x6f19edab6e53b333637f0e16d3ba5e6e62b0395734d2b1d665f7b10f133b509d",
+    "contract_code_sha256": "30520eb127772ac95914b6b478e4ef2625d85d453aca8f41c30e797113ccdb03",
+    "contract_abi_sha256": "3571213f1c896d643922b19849ad6c938abbefe6307887adc1c1e2d69e8c9bf4",
+    "tx_hash": "0xf3f3984572c14c6cf08455171adbf92fb1d0f28736c40bb54f3fcbeaa25b55d1",
+    "block_hash": "0x6ca690f704243fdcff57b0eaf9699a4a06b6927066ad6cd07ab10dbb4d80093e",
+    "value_constraint": "0"
+  },
+  "commitments": {
+    "payload_hash": "0xca6dcc25b63e4e27374f3bda6e03afa2f1b05bccf5b770f3d420ffdea35355fa",
+    "batch_root": "0x4d1569b7a06031e01e72cdc902ed22d92308c998ea9eeaabaac882a95846d15f",
+    "receipt_hash": "0x5a862ac8cd4539c9db37d521ab30b7f4c9a45222cb715ede9bb6fc84f856e16b",
+    "journal_hash": "0x7ab63e9ed7696c29a84ff26f79762f9b021064e6ee2416d2628a1472f932d59f",
+    "guest_image_id": "0x365a458af01b335e1855f7f878eaa3976ed42ad16edad4c4bdb679cdfb66621b",
+    "verifier_program_hash": "0x29ed94405f9e722f8aed9304feaa8be295c7886aa90bd4680fbfebfa77ffe015",
+    "expected_journal_hex": "4d474a300100010100020202004d1569b7a06031e01e72cdc902ed22d92308c998ea9eeaabaac882a95846d15f4d1569b7a06031e01e72cdc902ed22d92308c998ea9eeaabaac882a95846d15f29ed94405f9e722f8aed9304feaa8be295c7886aa90bd4680fbfebfa77ffe015"
+  },
+  "proof_program": {
+    "guest_image_id": "365a458af01b335e1855f7f878eaa3976ed42ad16edad4c4bdb679cdfb66621b",
+    "guest_id_words": [
+      911885706,
+      4028314462,
+      408287224,
+      2028643223,
+      1859398353,
+      1859835076,
+      3182852557,
+      4217791003
+    ],
+    "verifier_program_hash": "29ed94405f9e722f8aed9304feaa8be295c7886aa90bd4680fbfebfa77ffe015",
+    "rust_verifier_sha256": "1fdd92fa58dbd09eda4616c46ef38f356cff8b57ad238808430ba500f6affd69",
+    "rust_verifier_provenance": "UNKNOWN",
+    "measured_rust_verifier_sha256": "1fdd92fa58dbd09eda4616c46ef38f356cff8b57ad238808430ba500f6affd69",
+    "measured_verifier_source_sha256": "29ed94405f9e722f8aed9304feaa8be295c7886aa90bd4680fbfebfa77ffe015"
+  },
+  "policy": {
+    "body": {
+      "fast": {
+        "maxAgeSeconds": "300",
+        "mode": "FINALIZED",
+        "reorg": "REQUIRE_CANONICAL"
+      },
+      "ordering": "CROSS_CHAIN_FAST_INCLUSION_COMMITTED_BEFORE_ZK",
+      "zk": {
+        "maxAgeSeconds": "300",
+        "mode": "FINALIZED",
+        "reorg": "REQUIRE_CANONICAL"
+      }
+    },
+    "id": "M001-P73-POLICY-B1786",
+    "sha256": "e3664f4472d8288811375861d64947d647dd31bb12dc9a454662a1c5562fe2e0"
+  },
+  "acceptance": {
+    "verdict": "ACCEPTED",
+    "assessment": "CONSISTENT",
+    "code": "ACCEPTANCE_EVIDENCE_VERIFIED",
+    "evaluator": "zk_receipt_anchor_acceptance_v1",
+    "outcome_before_publish": "P73_ACCEPTED",
+    "preexisting_acceptance_status": "ABSENT",
+    "recheck": "MATCH",
+    "verifier_call_error": null,
+    "scope": "PINNED_SNAPSHOT_PAIR_BOUND_ACCEPTANCE",
+    "receipt_scope": "IMAGE_AND_JOURNAL_ROOTS_ONLY",
+    "record_specific_guest_execution": false,
+    "ordering": "CROSS_CHAIN_FAST_INCLUSION_COMMITTED_BEFORE_ZK",
+    "evidence_origin": "LIVE_RPC_AND_PINNED_NATIVE",
+    "rpc_assurance": "OWNER_SELECTED_ENDPOINT_TRUST",
+    "custody_authentication": false,
+    "execution_authority": false,
+    "lifecycle_write_authority": false,
+    "confirmation_depth": {
+      "fast": "UNAVAILABLE",
+      "zk": "UNAVAILABLE"
+    },
+    "started_at": "2026-11-28T00:52:49.604Z",
+    "finished_at": "2026-11-28T00:52:51.805Z"
+  },
+  "assurance_classification": {
+    "assurance": "SINGLE_PROVIDER_REDUCED",
+    "acceptance_record_assurance": {
+      "fast": "SINGLE_PROVIDER_REDUCED",
+      "zk": "SINGLE_PROVIDER_REDUCED"
+    }
+  },
+  "artifact_hash_binding": {
+    "artifacts": {
+      "envelope": {
+        "expected_sha256": "2abc4479e298c82bc84766ca4be22d8baa053ef132e2fae1339ea3b63cea862c",
+        "snapshot_before_sha256": "2abc4479e298c82bc84766ca4be22d8baa053ef132e2fae1339ea3b63cea862c",
+        "snapshot_after_sha256": "2abc4479e298c82bc84766ca4be22d8baa053ef132e2fae1339ea3b63cea862c",
+        "acceptance_record_sha256": "2abc4479e298c82bc84766ca4be22d8baa053ef132e2fae1339ea3b63cea862c",
+        "all_equal": true
+      },
+      "fastEvidence": {
+        "expected_sha256": "ee8c3b572c445632ff9c5732a2e242a1f2f7211f0bf2f059eac75929403aaca2",
+        "snapshot_before_sha256": "ee8c3b572c445632ff9c5732a2e242a1f2f7211f0bf2f059eac75929403aaca2",
+        "snapshot_after_sha256": "ee8c3b572c445632ff9c5732a2e242a1f2f7211f0bf2f059eac75929403aaca2",
+        "acceptance_record_sha256": "ee8c3b572c445632ff9c5732a2e242a1f2f7211f0bf2f059eac75929403aaca2",
+        "all_equal": true
+      },
+      "guestInput": {
+        "expected_sha256": "9a40665b2f67d241acac02464f225910e05c5d488e82b9946df643c19e66c9e7",
+        "snapshot_before_sha256": "9a40665b2f67d241acac02464f225910e05c5d488e82b9946df643c19e66c9e7",
+        "snapshot_after_sha256": "9a40665b2f67d241acac02464f225910e05c5d488e82b9946df643c19e66c9e7",
+        "acceptance_record_sha256": "9a40665b2f67d241acac02464f225910e05c5d488e82b9946df643c19e66c9e7",
+        "all_equal": true
+      },
+      "payload": {
+        "expected_sha256": "85bdda5006259f2ba0e94fbe398cf279b3b8bbb436a5a11e2868f568fb8abd2e",
+        "snapshot_before_sha256": "85bdda5006259f2ba0e94fbe398cf279b3b8bbb436a5a11e2868f568fb8abd2e",
+        "snapshot_after_sha256": "85bdda5006259f2ba0e94fbe398cf279b3b8bbb436a5a11e2868f568fb8abd2e",
+        "acceptance_record_sha256": "85bdda5006259f2ba0e94fbe398cf279b3b8bbb436a5a11e2868f568fb8abd2e",
+        "all_equal": true
+      },
+      "proof": {
+        "expected_sha256": "151b63a3623dcf843fcadc58fe160d0d898ea74dba4f204284959b778aee0514",
+        "snapshot_before_sha256": "151b63a3623dcf843fcadc58fe160d0d898ea74dba4f204284959b778aee0514",
+        "snapshot_after_sha256": "151b63a3623dcf843fcadc58fe160d0d898ea74dba4f204284959b778aee0514",
+        "acceptance_record_sha256": "151b63a3623dcf843fcadc58fe160d0d898ea74dba4f204284959b778aee0514",
+        "all_equal": true
+      },
+      "receipt": {
+        "expected_sha256": "5a862ac8cd4539c9db37d521ab30b7f4c9a45222cb715ede9bb6fc84f856e16b",
+        "snapshot_before_sha256": "5a862ac8cd4539c9db37d521ab30b7f4c9a45222cb715ede9bb6fc84f856e16b",
+        "snapshot_after_sha256": "5a862ac8cd4539c9db37d521ab30b7f4c9a45222cb715ede9bb6fc84f856e16b",
+        "acceptance_record_sha256": "5a862ac8cd4539c9db37d521ab30b7f4c9a45222cb715ede9bb6fc84f856e16b",
+        "all_equal": true
+      },
+      "rustReport": {
+        "expected_sha256": "cba5908046d422be2a7b308ba7b0aad849cec230b67af919c2d0342515fce744",
+        "snapshot_before_sha256": "cba5908046d422be2a7b308ba7b0aad849cec230b67af919c2d0342515fce744",
+        "snapshot_after_sha256": "cba5908046d422be2a7b308ba7b0aad849cec230b67af919c2d0342515fce744",
+        "acceptance_record_sha256": "cba5908046d422be2a7b308ba7b0aad849cec230b67af919c2d0342515fce744",
+        "all_equal": true
+      },
+      "submission": {
+        "expected_sha256": "767343ead5f87550cb7bcbc4262fb23a929256d6971aadcc5920926dcfa95cb7",
+        "snapshot_before_sha256": "767343ead5f87550cb7bcbc4262fb23a929256d6971aadcc5920926dcfa95cb7",
+        "snapshot_after_sha256": "767343ead5f87550cb7bcbc4262fb23a929256d6971aadcc5920926dcfa95cb7",
+        "acceptance_record_sha256": "767343ead5f87550cb7bcbc4262fb23a929256d6971aadcc5920926dcfa95cb7",
+        "all_equal": true
+      }
+    },
+    "all_artifacts_bound": true,
+    "artifact_count": 8,
+    "derived": "computed by comparing expected, snapshot_before, snapshot_after and acceptance-record hashes for each artifact"
+  },
+  "batch_root_equality": {
+    "representations": {
+      "acceptance_identity_batch_root": "4d1569b7a06031e01e72cdc902ed22d92308c998ea9eeaabaac882a95846d15f",
+      "request_commitment_batch_root": "4d1569b7a06031e01e72cdc902ed22d92308c998ea9eeaabaac882a95846d15f",
+      "request_segment_root": "4d1569b7a06031e01e72cdc902ed22d92308c998ea9eeaabaac882a95846d15f",
+      "journal_hex_bytes_13_45": "4d1569b7a06031e01e72cdc902ed22d92308c998ea9eeaabaac882a95846d15f",
+      "journal_hex_bytes_45_77": "4d1569b7a06031e01e72cdc902ed22d92308c998ea9eeaabaac882a95846d15f"
+    },
+    "all_equal_32_bytes": true,
+    "derived": "computed by comparing the full 64-hex-character values; journal positions are byte offsets in expected_journal_hex"
+  }
+}

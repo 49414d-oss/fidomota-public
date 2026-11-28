@@ -277,24 +277,25 @@ L3 does not create evidence, execute proofs, authorize blockchain transactions o
 
 ### 11. Implementation and Validation Status
 
-November 26, 2026
+November 28, 2026 — Mission-001 target batch `MG_BATCH_blake3_v1_20261120_1795198336847`
 
 | Component | Validation status |
 | --- | --- |
 | Authenticated virtual-device intake | Observed in the operational pipeline |
 | Native L1 evidence recording | Observed |
 | MerklePress and sealed batch | Observed |
-| Arc FAST root anchor | Confirmed against on-chain records in project engineering records |
-| RISC Zero proof generation | Real cryptographic proof generated and locally verified in isolation |
-| Operational receipt and journal | Materialization reported; independent verification pending |
-| Sepolia receipt commitment | Target-batch anchoring pending |
-| Independent end-to-end verification | Pending |
-| Dual Finality | Not achieved |
-| L3 Explorer | Implemented; complete Dual Finality presentation not yet validated |
+| Arc FAST root anchor | Finalized; root match verified |
+| RISC Zero receipt and journal | Verified against the guest image ID; journal bound to the batch root |
+| Sepolia receipt commitment | Recorded for the target batch and accepted |
+| Acceptance Verification | `ACCEPTED`; post-run verification passed all seven criteria |
+| Dual Finality | `DUAL_FINALITY_MATCHED` — six batch-root representations matched across all 32 bytes |
+| L3 Explorer | Dual Finality displayed for the target batch (`L3_BOUND_OK true`) |
 
-Operational observations and isolated cryptographic validation are different categories of evidence.
+For the target batch, the demonstrated execution satisfies the batch-root equality invariant: the FAST anchored root, the journal batch root and the DEEP committed root are the same 32-byte value.
 
-The complete public evidence package required to independently reproduce Mission-001 has not yet been published.
+The completed verification stage is Acceptance Verification: a dedicated evaluator, separated from evidence production, with no execution or lifecycle-write authority. It performs the Independent Verification role of Section 9 within this scope at the recorded assurance class `SINGLE_PROVIDER_REDUCED`, with verifier build provenance unresolved. It is not a third-party audit. External reproduction of the complete workflow remains a future deliverable.
+
+The acceptance record and public evidence extract are published in the [Mission-001 verification package](../verification/mission-001/README.md).
 
 See the [Engineering Dev Log](../devlog/) for historical engineering results.
 

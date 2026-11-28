@@ -26,6 +26,12 @@ The repository became publicly accessible on GitHub.
 
 Documentation revision covering the project philosophy, logical architecture, Dual Finality model and current engineering status.
 
+#### November 28, 2026
+
+Publication of the Mission-001 Dual Finality result and its verification evidence package.
+
+The package publishes the original acceptance record unmodified and a field-level extract of the accepted acceptance evidence. The source evidence artifact itself is not published. Its SHA-256 is given as a provenance reference only.
+
 ### Licensing and Contributions
 
 Public accessibility does not automatically grant an open-source license.
@@ -39,3 +45,5 @@ Licensing and contribution policies remain under review.
 Published engineering results describe specific observations and validation outcomes within their stated boundaries.
 
 Public documentation does not constitute independent reproduction of the complete system or a certification of production readiness.
+
+References to Circle Grants milestones describe technical progress obtained before formal grant kickoff. They do not represent grant approval, disbursement or formal milestone acceptance.
